@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<typeAliases>
+		<typeAlias alias="roomvo" type="com.example.simplechat.model.RoomVO"/>
+		<typeAlias alias="membervo" type="com.example.simplechat.model.MemberVO"/>
+		<typeAlias alias="roommembervo" type="com.example.simplechat.model.RoomMemberVO"/>
+		<typeAlias alias="chatvo" type="com.example.simplechat.model.ChatVO"/>
+	</typeAliases>
+
+
+
+</configuration>

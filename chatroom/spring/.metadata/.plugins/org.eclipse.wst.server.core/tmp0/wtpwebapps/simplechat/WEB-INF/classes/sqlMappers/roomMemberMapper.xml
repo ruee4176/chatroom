@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="roomMember">
+	
+	<select id="getRoomMemberList" parameterType="map">
+		SELECT * FROM room_${room_code}_member ORDER BY room_mem_name
+	</select>
+	
+	<select id="roomMemberCheck" parameterType="map" resultType="roommembervo">
+		SELECT * FROM room_${room_code}_member WHERE mem_id = #{mem_id}
+	</select>
+	
+	<delete id="delRoomMember" parameterType="map">
+		DELETE FROM room_${room_code}_member WHERE mem_id = #{mem_id}
+	</delete>
+	
+	<insert id="insRoomMember" parameterType="map">
+		INSERT INTO room_${room_code}_member SET 
+		mem_id		= #{mem_id},
+		room_mem_name 	= #{room_mem_name},
+		room_auth 	= #{room_auth}
+	</insert>
+	
+	<update id="upRoomMember" parameterType="map">
+		UPDATE room_${room_code}_member SET 
+			room_mem_name 	= #{room_mem_name},
+			room_auth 	= #{room_auth} 
+			
+		WHERE mem_id	= #{mem_id}
+	</update>
+	
+	<insert id="crtRoomMemberTable" parameterType="map">
+		${str}
+	</insert>
+	
+	<insert id="dropRoomMember" parameterType="map">
+		${str}
+	</insert>
+
+</mapper>

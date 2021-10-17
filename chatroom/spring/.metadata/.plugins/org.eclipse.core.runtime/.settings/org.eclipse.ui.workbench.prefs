@@ -1,0 +1,20 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+//org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.jdt.ui.presentation
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.ui.workbench.texteditor.blockSelectionModeFont
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
+eclipse.preferences.version=1
+net.harawata.mybatipse.ui.mybatissqlviewFont=1|D2Coding|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|-127|3|2|1|49|D2Coding;
+org.eclipse.egit.ui.CommitGraphHighlightFont=1|D2Coding|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|-127|3|2|1|49|D2Coding;
+org.eclipse.egit.ui.CommitGraphNormalFont=1|D2Coding|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|-127|3|2|1|49|D2Coding;
+org.eclipse.jdt.ui.ColoredLabels.match_highlight=73,83,90
+org.eclipse.jdt.ui.javadocfont=1|D2Coding|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|-127|3|2|1|49|D2Coding;
+org.eclipse.jface.bannerfont=1|D2Coding|9.75|1|WINDOWS|1|-13|0|0|0|700|0|0|0|0|3|2|1|49|D2Coding;
+org.eclipse.jface.dialogfont=1|D2Coding|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|-127|3|2|1|49|D2Coding;
+org.eclipse.jface.headerfont=1|D2Coding|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|0|3|2|1|49|D2Coding;
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands/>
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=37,41,45
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_TEXT_COLOR=16,16,16
+org.eclipse.ui.workbench.ACTIVE_TAB_BG_START=37,41,45
+org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=53,60,65
+org.eclipse.wst.jsdt.ui.javadocfont=1|D2Coding|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|-127|3|2|1|49|D2Coding;

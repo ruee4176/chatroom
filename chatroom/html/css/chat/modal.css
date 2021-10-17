@@ -1,0 +1,67 @@
+@charset 'utf-8';
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.on {
+    display: block;
+}
+
+.modal-box>div:first-child{ 
+    border: 1px solid #000;
+    min-height: 400px;
+    width: 500px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 250;
+}
+
+.modal-close {
+    text-align: right;
+    padding: 5px;
+}
+
+.modal-close>span {
+    user-select: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.modal-title {
+    padding-left: 10px;
+}
+
+.modal-box input[type=text] {
+    width: 330px;
+    height: 50px;
+    margin-left: 60px;
+    padding: 16px 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.modal-box input[type=text].off {
+    background-color: #eee;
+}
+
+.modal-box input[type=text].off::placeholder {
+    color: #bbb;
+}
+
+.modal .input-box {
+    display: flex;
+    flex-direction: column;
+}

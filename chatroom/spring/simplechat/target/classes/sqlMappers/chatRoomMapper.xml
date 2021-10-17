@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="chatRoom">
+
+	<insert id="insChatRoom" parameterType="roomvo">
+		INSERT INTO chat_room SET 
+		room_pwd	 = #{room_pwd},
+		room_code	 = #{room_code},
+		host_id		 = #{host_id},
+		room_title	 = #{room_title},
+		room_info	 = #{room_info}
+	</insert>
+	
+	<update id="upChatRoom" parameterType="roomvo">
+		UPDATE chat_room SET 
+			room_id		 = #{room_id},
+			room_pwd	 = #{room_pwd},
+			room_code	 = #{room_code},
+			host_id		 = #{host_id},
+			room_title	 = #{room_title},
+			room_info	 = #{room_info} 
+		
+		WHERE room_id	= #{room_id}
+	</update>
+	
+	<select id="roomCheck" parameterType="roomvo" resultType="roomvo">
+		SELECT * FROM chat_room WHERE room_code = #{room_code}
+		<if test="room_pwd != null">
+			 AND room_pwd = #{room_pwd}
+		</if>
+	</select>
+	
+	<select id="getChatRoomList" resultType="roomvo">
+		SELECT * FROM chat_room ORDER BY room_id DESC
+	</select>
+	
+	<select id="roomCodeOverlapCheck" parameterType="String" resultType="int">
+		SELECT COUNT(room_code) FROM chat_room WHERE room_code = #{room_code}
+	</select>
+	
+	<select id="getRoomCode" parameterType="int" resultType="String">
+		SELECT room_code FROM chat_room WHERE room_id = #{room_id}
+	</select>
+	
+	<select id="getRoomId" parameterType="String" resultType="int">
+		SELECT room_id FROM chat_room WHERE room_code = #{room_code}
+	</select>
+	
+	<select id="getRoom" parameterType="int" resultType="roomvo">
+		SELECT * FROM chat_room WHERE room_id = #{room_id}
+	</select>
+	
+	<insert id="setChatInMember" parameterType="map" >
+		INSERT INTO room_${room_code}_member SET 
+		mem_id	 		= #{mem_id}
+	</insert>
+	
+	<update id="setChatMember" parameterType="map">
+		UPDATE room_${room_code}_member SET 
+		
+		<choose>
+			<when test="room_mem_name != null and room_auth != null">
+				room_mem_name	= #{room_mem_name},
+				room_auth 		= #{room_auth} 
+			</when>
+			<when test="room_mem_name != null">
+				room_mem_name	= #{room_mem_name} 
+			</when>
+			<otherwise>
+				room_auth 		= #{room_auth} 
+			</otherwise>
+		</choose>
+		
+		WHERE mem_id = #{mem_id}
+	</update>
+	
+
+</mapper>

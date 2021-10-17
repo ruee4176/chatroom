@@ -1,0 +1,31 @@
+package com.example.simplechat.service.chatSrv;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.simplechat.model.ChatMemberVO;
+import com.example.simplechat.repository.chatDao.chatMemberDao;
+
+@Service
+public class chatMemberSrv {
+
+	@Autowired
+	chatMemberDao dao;
+	
+	public int chkChatMember(String mem_num) {
+		return dao.chkChatMember(mem_num);
+	}
+	
+	public void insChatMember(ChatMemberVO chatmember) {
+		dao.insChatMember(chatmember);
+	}
+	
+	public void upChatMember(ChatMemberVO chatmember) {
+		dao.upChatMember(chatmember);
+	}
+	
+	public void delChatMember(int mem_id) {
+		dao.delChatMember(mem_id);
+	}
+	
+}

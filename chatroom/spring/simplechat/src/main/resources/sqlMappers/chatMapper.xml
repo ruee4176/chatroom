@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="chat">
+
+	<select id="chatList" parameterType="map">
+		SELECT * FROM room_${room_code}_chat ORDER BY chat_id DESC 
+	</select>
+	
+	<select id="chatMemberChk" parameterType="map">
+		SELECT COUNT (*) FROM room_${room_code}_chat WHERE mem_id = #{mem_id} 
+	</select>
+
+	<select id="getRastChat" parameterType="map" resultType="chatvo">
+		SELECT * FROM room_${room_code}_chat WHERE chat_id = (SELECT MAX(chat_id) FROM room_${room_code}_chat)
+	</select>
+	
+	<insert id="setChat" parameterType="map">
+		INSERT INTO room_${room_code}_chat SET 
+		chat	 	= #{chat}
+		chat_time	= now(),
+		mem_id	 	= #{mem_id}
+	</insert>
+
+</mapper>

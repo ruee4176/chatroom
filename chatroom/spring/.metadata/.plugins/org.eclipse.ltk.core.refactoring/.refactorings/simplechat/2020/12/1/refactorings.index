@@ -1,0 +1,37 @@
+1609222296256	Delete element
+1609222411671	Move file
+1609222857405	Rename resource 'chat.css'
+1609222879934	Copy file
+1609224242696	Move files
+1609224514805	Move folder
+1609224518702	Move file
+1609224541426	Move file
+1609224552943	Rename resource 'CHAT_HEAD.jsp'
+1609224661881	Rename resource 'chatMemberJoin.jsp'
+1609224730891	Copy file
+1609224782918	Delete element
+1609224818688	Rename package 'com.example.simplechat.controller.memberCtr'
+1609224832105	Rename package 'com.example.simplechat.controller.memberController'
+1609224839131	Move compilation unit
+1609224841022	Move compilation unit
+1609224871857	Move compilation unit
+1609224876990	Move compilation unit
+1609225580735	Rename type 'chatMemberCtr'
+1609225651669	Rename type 'ChatMemberVO'
+1609225659267	Rename type 'ChatRoomMemberVO'
+1609225665628	Rename type 'ChatRoomVO'
+1609225719558	Rename type 'chatMemberDao'
+1609225726815	Rename type 'chatMemberSrv'
+1609225736356	Rename resource 'chatMemberMapper.xml'
+1609225741143	Rename resource 'chatRoomMapper.xml'
+1609225746730	Rename resource 'chatRoomMemberMapper.xml'
+1609229489356	Rename type 'chatRoomCtr'
+1609229492687	Rename type 'memberCtr'
+1609229496304	Rename type 'memberVO'
+1609229499157	Rename type 'roomMemberVO'
+1609229503393	Rename type 'roomVO'
+1609229506955	Rename type 'memberDao'
+1609229511205	Rename type 'chatRoomDao'
+1609229516627	Rename type 'chatRoomMemberDao'
+1609229521634	Rename type 'chatRoomSrv'
+1609229525078	Rename type 'memberSrv'

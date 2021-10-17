@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\development\chat\spring\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3170672796.index
+1410112086.index
+405690669.index
+4091820234.index
+2342506884.index
+958826624.index
+1387995063.index
